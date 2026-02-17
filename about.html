@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <script>
+    tailwind.config = { theme: { extend: { colors: { primary: '#9d6c3c', accent: '#2E4C2E', cta: '#9d6c3c', ctaHover: '#E5B68C', surface: '#FFF8E7', surfaceAlt: '#F5EAD5', textMain: '#2E2E2E', textMuted: '#6E6E6E' }, fontFamily: { heading: ['Playfair Display'], body: ['Lato'] } } } }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { overflow-x: hidden; }
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: #333; border-radius: 3px; }
+    .gradient-text {
+      background: linear-gradient(135deg, var(--tw-gradient-from, #fff), var(--tw-gradient-to, #ccc));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .glass {
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+    .noise::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 0;
+    }
+    .counter { display: inline-block; }
+  </style>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <title>About Us — Sunrise Bakery</title>
+  <meta name="description" content="Share the story, values, and mission of the bakery.">
+  <meta property="og:title" content="About Us — Sunrise Bakery">
+  <meta property="og:description" content="Share the story, values, and mission of the bakery.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+
+</head>
+<body class="bg-surface text-textMain font-body antialiased overflow-x-hidden">
+<nav class='fixed top-0 left-0 right-0 bg-[rgba(255,248,231,0.8)] backdrop-blur-xl shadow-md border-b border-surfaceAlt transition-all duration-300 z-50'><div class='container mx-auto flex items-center justify-between py-4 px-6'><a href='index.html' class='text-primary font-heading text-2xl'>Sunrise Bakery</a><ul class='hidden md:flex space-x-6'><li><a href='menu.html' class='text-textMuted hover:text-primary transition'>Menu</a></li><li><a href='catering.html' class='text-textMuted hover:text-primary transition'>Catering</a></li><li><a href='about.html' class='text-primary font-bold'>About</a></li><li><a href='contact.html' class='text-textMuted hover:text-primary transition'>Contact</a></li></ul><button class='md:hidden text-primary focus:outline-none' id='mobile-menu-button'><svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='currentColor' class='w-6 h-6'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 6h16M4 12h16M4 18h16'/></svg></button><a href='contact.html' class='hidden md:inline-block bg-primary text-surface px-4 py-2 rounded-md shadow-lg hover:bg-ctaHover transition-all duration-200'>Get in Touch</a></div><div id='mobile-menu' class='hidden absolute top-full left-0 w-full bg-surfaceAlt shadow-lg border-t border-surfaceAlt'><ul class='flex flex-col space-y-4 py-4 px-6'><li><a href='menu.html' class='text-textMuted hover:text-primary transition'>Menu</a></li><li><a href='catering.html' class='text-textMuted hover:text-primary transition'>Catering</a></li><li><a href='about.html' class='text-primary font-bold'>About</a></li><li><a href='contact.html' class='text-textMuted hover:text-primary transition'>Contact</a></li></ul></div></nav>
+<main class="bg-surface font-body text-textMain">
+
+  <!-- Hero Section -->
+  <section id="hero" class="relative min-h-screen flex items-center justify-center bg-surfaceAlt" data-aos="fade-up">
+    <div class="absolute inset-0 bg-gradient-to-br from-primary via-accent to-secondary opacity-50"></div>
+    <div class="relative z-10 text-center max-w-3xl px-6">
+      <h1 class="text-4xl md:text-6xl font-heading" style="color: #000000;" data-aos="fade-up" data-aos-duration="1000">
+        Sunrise Bakery - Handmade Pastries, Fresh-Baked Joy Every Day
+      </h1>
+      <p class="mt-4 text-lg md:text-xl" style="color: #333333;" data-aos="fade-up" data-aos-delay="200">
+        Discover the story behind our bakery and meet the passionate people who craft every bite.
+      </p>
+    </div>
+  </section>
+
+  <!-- Founder Story Section -->
+  <section id="founder-story" class="bg-surface py-16 md:py-24" data-aos="fade-up">
+    <div class="container mx-auto px-6 md:px-12 lg:px-20 flex flex-col md:flex-row items-center">
+      <div class="md:w-1/2" data-aos="fade-up">
+        <img loading="lazy" 
+          src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=800&q=80" 
+          alt="Artisan baker crafting bread on a wooden table" 
+          class="rounded-lg shadow-lg" 
+          data-aos="zoom-in"
+        />
+      </div>
+      <div class="md:w-1/2 mt-8 md:mt-0 md:pl-10">
+        <h2 class="text-3xl md:text-4xl font-heading mb-4" style="color: #000000;">
+          Our Story Begins in Portland
+        </h2>
+        <p class="text-lg mb-4" style="color: #333333;">
+          Sunrise Bakery started as a small family venture in the heart of Portland. Inspired by the city's vibrant food culture, we set out to create pastries that bring people together.
+        </p>
+        <p class="text-lg" style="color: #333333;">
+          Today, we remain committed to our roots: sourcing local, organic ingredients and crafting every pastry with care. It's not just baking—it's our way of sharing joy.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Values Section -->
+  <section id="values" class="bg-surfaceAlt py-16 md:py-24" data-aos="fade-up">
+    <div class="container mx-auto px-6 md:px-12 lg:px-20">
+      <h2 class="text-3xl md:text-4xl font-heading text-center mb-12" style="color: #000000;">
+        What We Stand For
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="p-6 bg-white rounded-xl shadow hover:shadow-xl hover:-translate-y-1 transition" data-aos="fade-up" data-aos-delay="0">
+          <h3 class="text-xl font-heading mb-3" style="color: #000000;">Fresh Ingredients</h3>
+          <p style="color: #333333;">
+            We partner with local farmers to bring you the freshest, organic ingredients in every bite.
+          </p>
+        </div>
+        <div class="p-6 bg-white rounded-xl shadow hover:shadow-xl hover:-translate-y-1 transition" data-aos="fade-up" data-aos-delay="100">
+          <h3 class="text-xl font-heading mb-3" style="color: #000000;">Sustainability</h3>
+          <p style="color: #333333;">
+            From eco-friendly packaging to reducing food waste, we're committed to protecting our planet.
+          </p>
+        </div>
+        <div class="p-6 bg-white rounded-xl shadow hover:shadow-xl hover:-translate-y-1 transition" data-aos="fade-up" data-aos-delay="200">
+          <h3 class="text-xl font-heading mb-3" style="color: #000000;">The Art of Baking</h3>
+          <p style="color: #333333;">
+            Every pastry is a work of art, crafted with precision and love to bring you the perfect treat.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section id="team" class="bg-surface py-16 md:py-24" data-aos="fade-up">
+    <div class="container mx-auto px-6 md:px-12 lg:px-20 text-center">
+      <h2 class="text-3xl md:text-4xl font-heading mb-12" style="color: #000000;">
+        Meet Our Passionate Team
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <article class="p-6 bg-white rounded-xl shadow hover:shadow-xl hover:-translate-y-1 transition" data-aos="fade-up" data-aos-delay="0">
+          <img loading="lazy" 
+            src="https://images.unsplash.com/photo-1562564055-71e051d33c19?w=800&q=80" 
+            alt="Smiling baker with apron" 
+            class="w-full rounded-t-lg"
+          />
+          <h3 class="text-xl font-heading mt-4" style="color: #000000;">Emma Johnson</h3>
+          <p style="color: #333333;">Founder & Master Baker</p>
+        </article>
+        <article class="p-6 bg-white rounded-xl shadow hover:shadow-xl hover:-translate-y-1 transition" data-aos="fade-up" data-aos-delay="100">
+          <img loading="lazy" 
+            src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?w=800&q=80" 
+            alt="Chef preparing pastries in a kitchen" 
+            class="w-full rounded-t-lg"
+          />
+          <h3 class="text-xl font-heading mt-4" style="color: #000000;">Liam Carter</h3>
+          <p style="color: #333333;">Head Pastry Chef</p>
+        </article>
+        <article class="p-6 bg-white rounded-xl shadow hover:shadow-xl hover:-translate-y-1 transition" data-aos="fade-up" data-aos-delay="200">
+          <img loading="lazy" 
+            src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?w=800&q=80" 
+            alt="Team member with friendly smile and apron" 
+            class="w-full rounded-t-lg"
+          />
+          <h3 class="text-xl font-heading mt-4" style="color: #000000;">Sophia Lee</h3>
+          <p style="color: #333333;">Catering Coordinator</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section id="cta" class="bg-gradient-to-br from-primary via-accent to-secondary py-16 md:py-24 text-center" data-aos="fade-up">
+    <div class="container mx-auto px-6 md:px-12 lg:px-20">
+      <h2 class="text-3xl md:text-4xl font-heading mb-6" style="color: #ffffff;">
+        Ready to Taste the Difference?
+      </h2>
+      <p class="text-lg md:text-xl mb-8" style="color: #f5f5f5;">
+        Visit us in Portland or contact us to make your next event unforgettable with our catering services.
+      </p>
+      <a href="contact.html" class="inline-block px-8 py-4 text-lg font-heading" style="color: #ffffff; background-color: #333333;">
+        Contact Us for Catering
+      </a>
+    </div>
+  </section>
+
+</main>
+<footer class='bg-surfaceAlt py-8'><div class='container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-6'><div><h3 class='text-primary font-heading text-xl mb-4'>Sunrise Bakery</h3><p class='text-textMuted'>Handmade Pastries, Fresh-Baked Joy Every Day</p></div><div><h4 class='text-primary font-heading text-lg mb-4'>Quick Links</h4><ul class='space-y-2'><li><a href='menu.html' class='text-textMuted hover:text-primary'>Menu</a></li><li><a href='catering.html' class='text-textMuted hover:text-primary'>Catering</a></li><li><a href='about.html' class='text-textMuted hover:text-primary'>About</a></li><li><a href='contact.html' class='text-textMuted hover:text-primary'>Contact</a></li></ul></div><div><h4 class='text-primary font-heading text-lg mb-4'>Follow Us</h4><ul class='flex space-x-4'><li><a href='#' class='text-primary hover:text-ctaHover'><svg xmlns='http://www.w3.org/2000/svg' fill='currentColor' viewBox='0 0 24 24' class='w-6 h-6'><path d='M24 4.56v15.08c0 .99-.8 1.79-1.79 1.79H1.79C.8 21.43 0 20.63 0 19.64V4.56C0 3.57.8 2.77 1.79 2.77h20.42C23.2 2.77 24 3.57 24 4.56z'/></svg></a></li><li><a href='#' class='text-primary hover:text-ctaHover'><svg xmlns='http://www.w3.org/2000/svg' fill='currentColor' viewBox='0 0 24 24' class='w-6 h-6'><path d='M24 4.56v15.08c0 .99-.8 1.79-1.79 1.79H1.79C.8 21.43 0 20.63 0 19.64V4.56C0 3.57.8 2.77 1.79 2.77h20.42C23.2 2.77 24 3.57 24 4.56z'/></svg></a></li></ul></div></div><div class='text-center text-textMuted mt-8'>© 2026 Sunrise Bakery. Built by <a href='https://ajayadesign.github.io' class='text-primary hover:text-ctaHover'>AjayaDesign</a></div></footer>
+<script>document.getElementById('mobile-menu-button').addEventListener('click', function() { const menu = document.getElementById('mobile-menu'); menu.classList.toggle('hidden'); });</script>
+<script>document.getElementById('mobile-menu-button').addEventListener('click', function() { const menu = document.getElementById('mobile-menu'); menu.classList.toggle('hidden'); });</script>
+<script>/* js-safety-guard */
+try {
+document.getElementById('mobile-menu-button').addEventListener('click', function() { const menu = document.getElementById('mobile-menu'); menu.classList.toggle('hidden'); });
+} catch(e) { console.warn('Script error:', e); }
+</script>
+<script>
+  AOS.init({ duration: 800, once: true, offset: 80 });
+  document.querySelectorAll('.counter').forEach(el => {
+    const target = parseInt(el.dataset.target || el.textContent, 10);
+    if (isNaN(target)) return;
+    let current = 0;
+    const step = Math.max(1, Math.ceil(target / 60));
+    const timer = setInterval(() => {
+      current += step;
+      if (current >= target) { el.textContent = target.toLocaleString(); clearInterval(timer); }
+      else { el.textContent = current.toLocaleString(); }
+    }, 25);
+  });
+</script>
+<script>
+  window.addEventListener('scroll', () => {
+    const h = document.documentElement;
+    const pct = (h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100;
+    document.getElementById('scroll-progress').style.width = pct + '%';
+  });
+</script>
+<script>
+  window.addEventListener('scroll', () => {
+    document.getElementById('back-to-top').style.opacity = window.scrollY > 400 ? '1' : '0';
+  });
+</script>
+</body>
+</html>
