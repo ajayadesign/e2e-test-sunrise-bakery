@@ -8,10 +8,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <script>
-    tailwind.config = { theme: { extend: { colors: { primary: '#9d6c3c', accent: '#2E4C2E', cta: '#9d6c3c', ctaHover: '#E5B68C', surface: '#FFF8E7', surfaceAlt: '#F5EAD5', textMain: '#2E2E2E', textMuted: '#6E6E6E' }, fontFamily: { heading: ['Playfair Display'], body: ['Lato'] } } } }
+    tailwind.config = { theme: { extend: { colors: { primary: '#936e00', accent: '#2C5F2D', cta: '#936e00', ctaHover: '#E5C770', surface: '#FFF9E6', surfaceAlt: '#F5EBD9', textMain: '#3B3B3B', textMuted: '#6D6D6D' }, fontFamily: { heading: ['Playfair Display'], body: ['Lato'] } } } }
   </script>
   <style>
     html { scroll-behavior: smooth; }
@@ -43,90 +43,79 @@
   </style>
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   <title>Catering — Sunrise Bakery</title>
-  <meta name="description" content="Promote catering services for events like weddings and gatherings.">
+  <meta name="description" content="Drive interest and inquiries for catering services, especially for weddings and events.">
   <meta property="og:title" content="Catering — Sunrise Bakery">
-  <meta property="og:description" content="Promote catering services for events like weddings and gatherings.">
+  <meta property="og:description" content="Drive interest and inquiries for catering services, especially for weddings and events.">
   <meta property="og:type" content="website">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
 
 
 </head>
 <body class="bg-surface text-textMain font-body antialiased overflow-x-hidden">
-<nav class='fixed top-0 left-0 right-0 bg-[rgba(255,248,231,0.8)] backdrop-blur-xl shadow-md border-b border-surfaceAlt transition-all duration-300 z-50'><div class='container mx-auto flex items-center justify-between py-4 px-6'><a href='index.html' class='text-primary font-heading text-2xl'>Sunrise Bakery</a><ul class='hidden md:flex space-x-6'><li><a href='menu.html' class='text-textMuted hover:text-primary transition'>Menu</a></li><li><a href='catering.html' class='text-primary font-bold'>Catering</a></li><li><a href='about.html' class='text-textMuted hover:text-primary transition'>About</a></li><li><a href='contact.html' class='text-textMuted hover:text-primary transition'>Contact</a></li></ul><button class='md:hidden text-primary focus:outline-none' id='mobile-menu-button'><svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='currentColor' class='w-6 h-6'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 6h16M4 12h16M4 18h16'/></svg></button><a href='contact.html' class='hidden md:inline-block bg-primary text-surface px-4 py-2 rounded-md shadow-lg hover:bg-ctaHover transition-all duration-200'>Get in Touch</a></div><div id='mobile-menu' class='hidden absolute top-full left-0 w-full bg-surfaceAlt shadow-lg border-t border-surfaceAlt'><ul class='flex flex-col space-y-4 py-4 px-6'><li><a href='menu.html' class='text-textMuted hover:text-primary transition'>Menu</a></li><li><a href='catering.html' class='text-primary font-bold'>Catering</a></li><li><a href='about.html' class='text-textMuted hover:text-primary transition'>About</a></li><li><a href='contact.html' class='text-textMuted hover:text-primary transition'>Contact</a></li></ul></div></nav>
+<nav class='fixed top-0 left-0 w-full backdrop-blur-xl bg-[rgba(255,249,230,0.8)] shadow-md transition-all duration-300'><div class='max-w-7xl mx-auto flex items-center justify-between px-6 py-4'><a href='index.html' class='text-primary font-heading text-xl'>Sunrise Bakery</a><ul class='hidden md:flex space-x-6'><li><a href='menu.html' class='text-textMuted hover:text-primary transition'>Menu</a></li><li><a href='catering.html' class='text-primary font-bold'>Catering</a></li><li><a href='about.html' class='text-textMuted hover:text-primary transition'>About</a></li><li><a href='contact.html' class='text-textMuted hover:text-primary transition'>Contact</a></li></ul><button class='block md:hidden text-primary focus:outline-none' id='mobile-menu-button'><svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='currentColor'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 6h16M4 12h16M4 18h16'/></svg></button><a href='contact.html' class='hidden md:inline-block bg-primary text-surface px-4 py-2 rounded-md hover:bg-ctaHover transition-shadow shadow-lg hover:shadow-xl'>Contact Us</a></div><div id='mobile-menu' class='hidden w-full bg-surfaceAlt shadow-md'><ul class='space-y-4 px-6 py-4'><li><a href='menu.html' class='text-textMuted hover:text-primary transition block'>Menu</a></li><li><a href='catering.html' class='text-primary font-bold block'>Catering</a></li><li><a href='about.html' class='text-textMuted hover:text-primary transition block'>About</a></li><li><a href='contact.html' class='text-textMuted hover:text-primary transition block'>Contact</a></li></ul></div></nav>
 <main>
-
   <!-- Hero Section -->
-  <section id="hero" class="relative bg-surface min-h-screen flex items-center justify-center text-center" data-aos="fade-up">
+  <section id="hero" class="relative min-h-screen bg-surfaceAlt flex items-center" data-aos="fade-up" style="overflow-x: hidden;">
     <div class="absolute inset-0">
-      <img loading="lazy" src="https://images.unsplash.com/photo-1606312619349-c5b6b5b1bcd2?w=1600&q=80" alt="Beautiful catering table with pastries and decorations" class="object-cover w-full h-full">
+      <img loading="lazy" src="https://images.unsplash.com/photo-1606851091848-3c2e3c6e6b72?w=1600&q=80" alt="Beautifully arranged dessert table at an event" class="w-full h-full object-cover">
     </div>
-    <div class="relative z-10 max-w-4xl px-6 py-12 text-white bg-black/50 rounded-xl backdrop-blur-xl">
-      <h1 class="font-heading text-5xl md:text-6xl font-bold mb-4" data-aos="fade-up" data-aos-duration="1000" style="color: #FFFFFF;">Sunrise Bakery - Perfect Pastries for Every Occasion</h1>
-      <p class="font-body text-lg md:text-xl mb-6" data-aos="fade-up" data-aos-delay="200" style="color: #F5F5F5;">Make your events unforgettable with our artisanal, fresh-baked catering selection.</p>
-      <a href="#cta" class="bg-cta hover:bg-ctaHover text-white px-6 py-3 rounded-lg font-body text-lg transition" data-aos="fade-up" data-aos-delay="400" style="background-color: #003f7f; color: #FFFFFF;">Request a Consultation</a>
-    </div>
-  </section>
-
-  <!-- Service Details Section -->
-  <section id="service-details" class="bg-surfaceAlt py-20 md:py-32" data-aos="fade-up">
-    <div class="container mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-      <div>
-        <h2 class="font-heading text-4xl md:text-5xl font-bold mb-6" style="color: #1A1A1A;">Catering for Every Occasion</h2>
-        <p class="font-body text-lg md:text-xl text-textMuted mb-4" style="color: #4D4D4D;">Whether it's an intimate gathering or a grand celebration, we've got you covered. Our catering services are perfect for:</p>
-        <ul class="font-body text-lg text-textMain space-y-2" style="color: #1A1A1A;">
-          <li>- Weddings</li>
-          <li>- Corporate Events</li>
-          <li>- Parties & Celebrations</li>
-        </ul>
-        <p class="font-body text-lg md:text-xl text-textMuted mt-6" style="color: #4D4D4D;">We offer customizable menus tailored to your preferences, featuring our signature handmade pastries, savory bites, and more.</p>
-      </div>
-      <div>
-        <img loading="lazy" src="https://images.unsplash.com/photo-1447078806655-40579c2520d6?w=800&q=80" alt="A selection of catered pastries and desserts displayed on a table" class="rounded-xl shadow-lg" data-aos="zoom-in">
+    <div class="relative z-10 container mx-auto px-6 lg:px-12 flex flex-col lg:flex-row items-center lg:items-start gap-8">
+      <div class="text-center lg:text-left max-w-lg">
+        <h1 class="text-4xl lg:text-6xl font-heading" style="color: #1a1a1a;" data-aos="fade-up" data-aos-duration="1000">Sunrise Bakery - Make Your Event Unforgettable</h1>
+        <p class="text-lg font-body" style="color: #1a1a1a;" data-aos="fade-up" data-aos-delay="200">Handmade pastries and desserts crafted with love to elevate your special occasion.</p>
+        <a href="contact.html" class="mt-6 px-6 py-3 bg-cta text-white font-body rounded-lg hover:bg-ctaHover transition" style="background-color: #004080;" data-aos="fade-up" data-aos-delay="400">Request a Quote</a>
       </div>
     </div>
   </section>
 
-  <!-- Testimonials Section -->
-  <section id="testimonials" class="bg-surface py-20 md:py-32" data-aos="fade-up">
-    <div class="container mx-auto px-6 md:px-12 text-center">
-      <h2 class="font-heading text-4xl md:text-5xl font-bold mb-12" style="color: #1A1A1A;">What Our Clients Say</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <blockquote class="bg-white shadow-lg rounded-xl p-6" data-aos="fade-up" data-aos-delay="0">
-          <p class="font-body text-lg text-textMain mb-4" style="color: #1A1A1A;">"Sunrise Bakery made our wedding day so special. The pastries were beautiful and delicious — our guests couldn't stop raving about them!"</p>
-          <footer class="font-body text-textMuted" style="color: #4D4D4D;">- Emily R.</footer>
-        </blockquote>
-        <blockquote class="bg-white shadow-lg rounded-xl p-6" data-aos="fade-up" data-aos-delay="100">
-          <p class="font-body text-lg text-textMain mb-4" style="color: #1A1A1A;">"From the presentation to the flavor, everything was perfect. They made our company event a huge success!"</p>
-          <footer class="font-body text-textMuted" style="color: #4D4D4D;">- James T.</footer>
-        </blockquote>
-        <blockquote class="bg-white shadow-lg rounded-xl p-6" data-aos="fade-up" data-aos-delay="200">
-          <p class="font-body text-lg text-textMain mb-4" style="color: #1A1A1A;">"Their pastries are a work of art! Everyone at our party was asking where we got them. Sunrise Bakery is simply the best."</p>
-          <footer class="font-body text-textMuted" style="color: #4D4D4D;">- Sarah L.</footer>
-        </blockquote>
+  <!-- Services Overview -->
+  <section id="services-overview" class="bg-surface py-16 md:py-24" data-aos="fade-up">
+    <div class="container mx-auto px-6 lg:px-12">
+      <h2 class="text-3xl font-heading" style="color: #1a1a1a; text-align: center;">Catering Packages Tailored for Your Event</h2>
+      <p class="text-lg font-body" style="color: #1a1a1a; text-align: center; margin-top: 1rem;">From intimate gatherings to grand celebrations, we offer customizable catering options to suit your needs.</p>
+
+      <div class="mt-12 grid md:grid-cols-3 gap-8">
+        <article class="p-6 bg-surfaceAlt rounded-lg shadow-lg hover:shadow-xl hover:-translate-y-1 transition" data-aos="fade-up" data-aos-delay="0">
+          <h3 class="text-xl font-heading" style="color: #1a1a1a;">Wedding Bliss</h3>
+          <p class="text-body" style="color: #1a1a1a; margin-top: 1rem;">Elegant dessert spreads and custom wedding cakes to make your big day unforgettable.</p>
+        </article>
+        <article class="p-6 bg-surfaceAlt rounded-lg shadow-lg hover:shadow-xl hover:-translate-y-1 transition" data-aos="fade-up" data-aos-delay="100">
+          <h3 class="text-xl font-heading" style="color: #1a1a1a;">Corporate Gatherings</h3>
+          <p class="text-body" style="color: #1a1a1a; margin-top: 1rem;">Professional catering for office events, team celebrations, and client meetings.</p>
+        </article>
+        <article class="p-6 bg-surfaceAlt rounded-lg shadow-lg hover:shadow-xl hover:-translate-y-1 transition" data-aos="fade-up" data-aos-delay="200">
+          <h3 class="text-xl font-heading" style="color: #1a1a1a;">Family Celebrations</h3>
+          <p class="text-body" style="color: #1a1a1a; margin-top: 1rem;">Perfect for birthdays, anniversaries, and reunions with handcrafted treats for all ages.</p>
+        </article>
       </div>
     </div>
   </section>
 
-  <!-- CTA Section -->
-  <section id="cta" class="bg-gradient-to-br from-primary via-accent to-secondary py-20 md:py-32 text-white" data-aos="fade-up">
-    <div class="container mx-auto px-6 md:px-12 text-center">
-      <h2 class="font-heading text-4xl md:text-5xl font-bold mb-6" style="color: #FFFFFF;">Let’s Make Your Event Unforgettable</h2>
-      <p class="font-body text-lg md:text-xl mb-8" style="color: #F5F5F5;">Talk to our catering specialists today. Share your vision, and we’ll handle the rest!</p>
-      <form action="contact.html" method="GET" class="max-w-2xl mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-          <input type="text" name="name" placeholder="Your Name" class="font-body text-lg p-4 w-full border border-textMuted rounded-lg focus:outline-none focus:ring-2 focus:ring-cta" style="color: #1A1A1A;">
-          <input type="email" name="email" placeholder="Your Email" class="font-body text-lg p-4 w-full border border-textMuted rounded-lg focus:outline-none focus:ring-2 focus:ring-cta" style="color: #1A1A1A;">
-        </div>
-        <textarea name="message" placeholder="Tell us about your event..." rows="4" class="font-body text-lg p-4 w-full border border-textMuted rounded-lg focus:outline-none focus:ring-2 focus:ring-cta mb-6" style="color: #1A1A1A;"></textarea>
-        <button type="submit" class="bg-white text-primary font-body text-lg px-8 py-3 rounded-lg hover:bg-ctaHover hover:text-white transition shadow" style="background-color: #003f7f; color: #FFFFFF;">
-          Request My Consultation
-        </button>
-      </form>
+  <!-- Customer Testimonials -->
+  <section id="customer-testimonials" class="bg-surfaceAlt py-16 md:py-24" data-aos="fade-up">
+    <div class="container mx-auto px-6 lg:px-12">
+      <h2 class="text-3xl font-heading" style="color: #1a1a1a; text-align: center;">What Our Clients Are Saying</h2>
+      <blockquote class="mt-12 max-w-3xl mx-auto text-center">
+        <p class="text-lg font-body" style="color: #1a1a1a;" data-aos="fade-up">"Sunrise Bakery made our wedding day so special. The dessert table was stunning, and everyone raved about the flavors!"</p>
+        <footer class="mt-4 font-body" style="color: #555555;">— Emily & James</footer>
+      </blockquote>
+      <blockquote class="mt-12 max-w-3xl mx-auto text-center">
+        <p class="text-lg font-body" style="color: #1a1a1a;" data-aos="fade-up" data-aos-delay="100">"Our corporate event was a hit thanks to the delicious pastries and professional service. Highly recommend!"</p>
+        <footer class="mt-4 font-body" style="color: #555555;">— Sarah T., Event Planner</footer>
+      </blockquote>
     </div>
   </section>
 
+  <!-- Call To Action -->
+  <section id="cta" class="bg-gradient-to-br from-primary via-accent to-secondary py-16 md:py-24 text-center" data-aos="fade-up">
+    <div class="container mx-auto px-6 lg:px-12">
+      <h2 class="text-3xl font-heading" style="color: #ffffff;">Ready to Elevate Your Event?</h2>
+      <p class="text-lg font-body" style="color: #ffffff; margin-top: 1rem;">Let us bring the taste of handmade joy to your special day. Contact us today to start planning.</p>
+      <a href="contact.html" class="mt-6 px-8 py-4 bg-white font-body rounded-lg hover:bg-ctaHover transition shadow-md" style="color: #004080;">Schedule a Tasting</a>
+    </div>
+  </section>
 </main>
-<footer class="font-body text-textMuted" style="color: #666666;">- Emily R.</footer>
+<footer class="mt-4" style="color: #555555;" class="font-body">— Emily & James</footer>
 <script>document.getElementById('mobile-menu-button').addEventListener('click', function() { const menu = document.getElementById('mobile-menu'); menu.classList.toggle('hidden'); });</script>
 <script>document.getElementById('mobile-menu-button').addEventListener('click', function() { const menu = document.getElementById('mobile-menu'); menu.classList.toggle('hidden'); });</script>
 <script>/* js-safety-guard */
